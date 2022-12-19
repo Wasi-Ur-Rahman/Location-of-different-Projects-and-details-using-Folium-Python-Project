@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d35a698260840391f503431dcd7007ae {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+<div style="position: fixed; 
+     top: 50px; left: 70px; width: 150px; height: 70px; 
+     background-color:orange; border:2px solid grey;z-index: 900;">
+    <h5>Hello World!!!</h5>
+    <button>Test Button</button>
+</div>
+    
+            <div class="folium-map" id="map_d35a698260840391f503431dcd7007ae" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d35a698260840391f503431dcd7007ae = L.map(
+                "map_d35a698260840391f503431dcd7007ae",
+                {
+                    center: [23.729211164246585, 90.40874895549243],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f4cf12aeeb847b33ee5529e8cf258b36 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d35a698260840391f503431dcd7007ae);
+        
+    
+            var marker_074994865c0ef62545c190331350fdd3 = L.marker(
+                [23.729211164246585, 90.40874895549243],
+                {}
+            ).addTo(map_d35a698260840391f503431dcd7007ae);
+        
+    
+        var popup_e46a98ce1689673084417b3c3539a07f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc05734c0ad010f69840897254cb7c54 = $(`<div id="html_dc05734c0ad010f69840897254cb7c54" style="width: 100.0%; height: 100.0%;"><strong>project_name:</strong><br>JICA Support Program 3 for Strengthening Mathematics and Science Education in Primary Education Project</br><br><strong>Category</strong>: Education</br><br><strong>Affiliated Agency</strong>: Ministry of Primary and Mass Education, Directorate of Primary Education</br><br>>strong>Project Start Time</strong>: 4/1/2019</br><br><strong>Project end time</strong>: 6/30/2023</br><br><strong>Total Budget</strong>: JPY 380M</br><br><strong>completion_percentage</strong>: 77.36%</br></div>`)[0];
+                popup_e46a98ce1689673084417b3c3539a07f.setContent(html_dc05734c0ad010f69840897254cb7c54);
+            
+        
+
+        marker_074994865c0ef62545c190331350fdd3.bindPopup(popup_e46a98ce1689673084417b3c3539a07f)
+        ;
+
+        
+    
+</script>
+</html>
